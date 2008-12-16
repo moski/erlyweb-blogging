@@ -1,0 +1,18 @@
+How to run
+- Get the latest versiona of ErlyWeb (prior to 0.7.1, this would be from trunk) and Yaws
+- Install MySQL and create a MySQL database for your blog.
+- Run blog.sql to create the blog tables.
+- Edit src/blog_app.hrl with your appropriate environment variables.
+- compile  start.erl (used to startup ur blog)
+- Edit yaws.conf to add the ErlyWeb application settings for Blog.
+- Start Yaws and in the shell, type "start:boot()".
+
+
+-- Ruby Gems for textmate formatting
+- sudo gem install hpricot
+- sudo gem install erlectricity
+- sudo gem install ultraviolet 
+
+
+Peace,
+Moski
