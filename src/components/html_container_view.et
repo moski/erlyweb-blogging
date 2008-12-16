@@ -5,9 +5,9 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Hello, my name is Moski Doski. I make the internet fun. » Drink Zzz</title>
 	<style type="text/css" media="screen">
-		@import url( http://127.0.0.1:8000/style.css);
-		@import url( http://127.0.0.1:8000/espresso_libre.css);
-		@import url( http://127.0.0.1:8000/twilight.css);
+		@import url( /style.css);
+		@import url( /espresso_libre.css);
+		@import url( /twilight.css);
 	</style>
 		
 	
@@ -16,7 +16,7 @@
 	<div id="header-wrap">
 		<center>
 			<div id="header-container">
-				<a id="moski" href="http://kevinjohngomez.com/">Hello, my name is Moski Doski.</a>
+				<a id="moski" href="/">Hello, my name is Moski Doski.</a>
 				<div id="nav-container">
 					<ul id="nav">
 						<li id="portfolio"><a href="/category/portfolio">Portfolio</a></li>
