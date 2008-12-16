@@ -1,0 +1,512 @@
+/*
+Theme Name: Hotness
+Theme URI: http://wordpress.org/
+Description: A WordPress theme.
+Version: 1
+Author: Kevin John Gomez DOT COM!
+*/
+
+h6.comment a:link,
+h6.comment a:visited {
+	background:url(images/comments.gif) no-repeat;
+	color:#00ffcc;
+	display:block;
+	padding:3px 0 8px 6px;
+	width:86px;
+	margin:0;
+	}
+	
+
+		body {
+			background:#110e0c;
+			margin:0;
+			font-family: Georgia, "Times New Roman", Serif;
+			}
+			
+		a:link, a:visited {
+			color:#00ffcc;
+			text-decoration:none;
+			}
+			
+		a:hover, a:hover:visited {
+			text-decoration:underline;
+			}
+		
+		a img {border:0;}
+			
+		#header-wrap {
+			background:#fbfaf5;
+			margin:0;
+			}
+			
+		#header-container {
+			width: 900px;
+			background:#fbfaf5 url(images/moski.jpg) no-repeat -5px 0;
+			height: 272px;
+			text-align:left;
+			overflow:hidden;
+			}
+			
+		a#moski {
+			display:block;
+			overflow:hidden;
+			width:323px;
+			height:163px;
+			text-indent:-500px;
+			background:url(images/moski.gif) no-repeat;
+			margin:45px 0 0 0;
+			float:left;
+			}
+			
+		#nav-container {
+		width: 285px;
+		height: 217px;
+		float: right;
+		margin: 22px 0 0 0;
+		overflow: hidden;
+		}
+		
+	ul#nav {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		}
+		
+	ul#nav li {
+		margin: 0;
+		padding: 0;
+		float: left;
+		}
+		
+	ul#nav li a {
+		display: block;
+		text-indent: -1000px;
+		background-image: url(images/nav-background.gif);
+		}
+		
+	li#portfolio a:link,
+	li#portfolio a:visited {
+		width: 285px;
+		height: 59px;
+		background-position: 0 0;
+		}
+		
+	li#portfolio a:hover,
+	li#portfolio a:visited:hover {
+		background-position: 0 -217px;
+		}
+		
+	li#blog a:link,
+	li#blog a:visited {
+		width: 140px;
+		height: 107px;
+		background-position: 0 -59px;
+		}
+		
+	li#blog a:hover,
+	li#blog a:visited:hover {
+		background-position: 0 -276px;
+		}
+		
+	li#sale a:link,
+	li#sale a:visited {
+		width: 142px;
+		height: 107px;
+		background-position: 143px -59px;
+		}
+		
+	li#sale a:hover,
+	li#sale a:visited:hover {
+		background-position: 143px -276px;
+		}
+		
+	li#hello a:link,
+	li#hello a:visited {
+		width: 285px;
+		height: 51px;
+		background-position: 0 -166px;
+		}
+		
+	li#hello a:hover,
+	li#hello a:visited:hover {
+		background-position: 0 -383px;
+		}
+
+			
+		/*---ul#nav {
+			float:right;
+			margin:20px 0 0 0;
+			list-style:none;
+			}
+			
+		li#portfolio a:link,
+		li#portfolio a:visited {
+			display:block;
+			overflow:hidden;
+			width:216px;
+			height:75px;
+			text-indent:-500px;
+			background:url(images/portfolio.gif) no-repeat 0 0;
+			margin:0 0 0 25px;
+			}
+			
+		li#portfolio a:hover,
+		li#portfolio a:visited:hover {
+			background-position: 0 -75px;
+			}
+			
+		li#blog a:link,
+		li#blog a:visited {
+			display:block;
+			overflow:hidden;
+			width:135px;
+			height:84px;
+			text-indent:-500px;
+			background:url(images/blog.gif) no-repeat 0 0;
+			margin:5px 0 7px 0;
+			}
+			
+		li#blog a:hover,
+		li#blog a:visited:hover {
+			background-position: 0 -84px;
+			}
+			
+		li#hello a:link,
+		li#hello a:visited {
+			display:block;
+			overflow:hidden;
+			width:243px;
+			height:49px;
+			text-indent:-500px;
+			background:url(images/hello.gif) no-repeat 0 0;
+			}
+			
+		li#hello a:hover,
+		li#hello a:visited:hover {
+			background-position: 0 -49px;
+			}----*/
+			
+		#content-wrap {
+			background:#312a24 url(images/wood-gradient.gif) repeat-x top;
+			overflow:hidden;
+			padding:50px 0 100px 0;
+			}
+			
+		#content-col {
+			width:850px;
+			text-align: left;
+			}
+				
+		#left-col {
+			width:550px;
+			text-align: left;
+			float:left;
+			overflow:hidden;
+			}
+			
+		#right-col {
+			width:250px;
+			margin:0;
+			float:right;
+			display:block;
+			overflow:hidden;
+			}
+			
+		p#about {
+			font-size:14px;
+			line-height:20px;
+			background:#110e0c;
+			padding:15px 15px 45px 15px;
+			color:#eee;
+			margin:5px 0 20px 0;
+			background:#110e0c url(images/comment-mask.gif) no-repeat bottom left ;
+			}
+			
+			
+		h6.date {
+			clear:both;
+			font-weight:normal;
+			font-size:12px;
+			font-family:"Lucida Grande", "Arial", "san-serif";
+			color:#666;
+			margin:0;
+			}
+		
+		h2#postcomment {
+			display:block;
+			overflow:hidden;
+			background:url(images/leave-comment.gif) no-repeat;
+			text-indent:-500px;
+			width:314px;
+			height:26px;
+			margin: 0 0 10px 20px;
+			}
+	
+.title-container {
+	display:block;
+	padding:8px 0;
+	overflow:hidden;
+	}
+
+
+.post {
+	clear:both;
+	margin:0 0 30px 0;
+	background:url(images/divider.gif) repeat-x bottom;
+	padding:0 0 30px 0;
+	overflow:hidden;
+	}
+	
+.post img {
+	margin:5px 25px 20px 0;
+	float:left;
+	background:#110e0c;
+	padding:5px;
+	}
+	
+.post p {
+	margin:20px 0;
+	}
+	
+
+
+
+.storycontent {
+	font-size:12px;
+	line-height:20px;
+	color:#ccc;
+	font-family:"Lucida Grande", "Arial", "san-serif";
+	}
+
+
+
+	
+h3.storytitle {
+	margin: 0 0 5px 0;
+	font-size:30px;
+	text-transform: lowercase;
+	font-weight:normal;
+	font-style:italic;
+	display:block;
+	float:left;
+	background:url(images/underline.gif) repeat-x bottom;
+	max-width:500px;
+	}	
+
+h3.storytitle a:link,
+h3.storytitle a:visited {
+	text-decoration:none;
+	color:#fff;
+	}
+	
+h3.storytitle a:hover,
+h3.storytitle a:visited:hover {
+	color:#00ffcc;
+	}
+	
+
+.comments {
+	background:url(images/comments.gif) no-repeat top;
+	font-size:14px;
+	font-style:normal;
+	font-weight:bold;
+	color:#ffff66;
+	position:relative;
+	top:-2px;
+	right:-7px;
+	display:block;
+	padding:1px 13px 10px 13px;
+	float:left;
+	text-decoration:none;
+	font-family:"Lucida Grande", Arial, "Sans-serif";
+	}
+
+
+ol#commentlist {
+	list-style:none;
+	margin:0;
+	padding:0;
+	font-family:"Lucida Grande", Arial, "Sans-serif";
+	color:#fff;
+	font-size:12px;
+	line-height:20px;
+	}
+	
+ol#commentlist li {
+	padding:20px 20px 40px 20px;
+	margin:20px 0 0 0;
+	display:block;
+	background:#110e0c url(images/comment-mask.gif) no-repeat bottom ;
+	}
+	
+ol#commentlist li h3 {
+	font-family:Georgia, serif;
+	font-style:italic;
+	font-size:20px;
+	margin:0;
+	font-weight:normal;
+	text-transform:lowercase;
+	}
+
+ol#commentlist li h3 small {
+	font-size:14px;
+	color:#999;
+	}
+	
+input#author {
+	border:0;
+	background:none;
+	margin:30px 0 0 140px;
+	font-size:14px;
+	width:280px;
+	}
+	
+input#email {
+	border:0;
+	background:none;
+	margin:20px 0 0 160px;
+	font-size:14px;
+	width:280px;
+	}
+	
+input#url {
+	border:0;
+	background:none;
+	margin:20px 0 0 130px;
+	font-size:14px;
+	width:330px;
+	}
+	
+input#submit {
+	color:#ffffcc;
+	background:#ff0066;
+	padding:10px;
+	border:0;
+	font-weight:bold;
+	font-size:14px;
+	position:relative;
+	right:-370px;
+	top:20px;
+	}
+
+textarea#comment {
+	border:0;
+	background:none;
+	margin:27px 0 0 175px;
+	font-size:10px;
+	width:280px;
+	font-family:"Lucida Grande", "Arial", "san-serif";
+	}
+	
+#comment-form {
+	width:550px;
+	height:300px;
+	margin:50px 0 0 0;
+	display:block;
+	background:url(images/comment-form.gif) no-repeat;
+	}
+	
+.resume a:link,
+.resume a:visited {
+	display:block;
+	overflow:hidden;
+	width:250px;
+	height:90px;
+	text-indent:-500px;
+	background:url(images/resume.gif);
+	background-position:0 0;
+	margin:0;
+	}
+	
+.resume a:hover,
+.resume a:visited:hover {
+	background-position:0 90px;
+	}
+	
+/*
+Images are wrapped in divs classed "flickr_badge_image" with ids
+"flickr_badge_imageX" where "X" is an integer specifying ordinal position.
+Below are some styles to get you started!
+*/
+#flickr_badge_uber_wrapper { background:#110e0c url(images/flickr.gif) no-repeat bottom; display:block; overflow:hidden; padding:10px 0 27px 10px; margin:40px 0 0 0;}
+.flickr_badge_image {float:left; margin:0 10px 10px 0;}
+.flickr_badge_image img {width:70px; height:70px;  border: 0; display:block;}
+#flickr_badge_wrapper {margin:0;}
+
+#footer-container {
+	width:850px;
+	text-align:left;
+	color:#fff;
+	font-style:italic;
+	font-size:14px;
+	padding:20px 0;
+	margin:0;
+	display:block;
+	overflow:hidden;
+	}
+	
+.copy {
+	font-style:normal;
+	color:#666;
+	margin:0;
+	float:left;
+	}
+	
+.credit {
+	float:right;
+	}
+	
+img#back {
+	float:left;
+	margin:0;
+	}
+	
+img#next {
+	float:right;
+	margin:0;
+	}
+	
+.clear {
+	overflow: hidden;
+	clear: both;
+	}
+	
+
+
+/*---SHOP---*/
+.order-form {
+	background: #110e0c;
+	padding:15px 15px 45px 15px;
+	background:#110e0c url(images/comment-mask.gif) no-repeat bottom left ;
+	overflow: hidden;
+	clear: both;
+	}
+	
+.order-form form {
+	margin: 0;
+	padding: 0;
+	}
+	
+input.buy-now {
+	float: right;
+	}
+	
+select.select-size {
+	width: 150px;
+	float: left;
+	}
+	
+.order-form h4 {
+	display: block;
+	font-weight: normal;
+	font-size: 12px;
+	margin: 0 0 15px 0;
+	padding: 0 0 2px 0;
+	border-bottom: solid #312a24 1px;
+	}
+
+.thumbs {
+	overflow: hidden;
+	display: block;
+	clear: both;
+	}	

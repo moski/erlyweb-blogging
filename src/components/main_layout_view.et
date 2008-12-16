@@ -1,0 +1,9 @@
+<%@ index([Data, Sidebar]) %>
+<div id="content-col">
+	<div id="left-col">
+		<% Data %>
+	</div>	
+	<div id="right-col">
+		<% Sidebar%>
+	</div>
+</div>

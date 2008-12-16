@@ -1,0 +1,19 @@
+<%@ show_errors(Errors) %>
+<ul>
+<% [error(E) || E <- Errors] %>
+</ul>
+
+<%@ error(Error) %>
+<li><% element(3, Error) %></li>
+
+
+
+<%@ input(Name, select, Options, Val) %>
+<select name="<% Name %>"><% [option(category:title(O), integer_to_list(category:id(O)) , Val) || O <- Options] %></select>
+
+<%@ option(Name, Key ,Name) %>
+<option value="<% Key %>" selected><% Name %></option>
+
+<%@ option(Name, Key , _Val) %>
+<option value="<% Key %>"><% Name %></option>
+

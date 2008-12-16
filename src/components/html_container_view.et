@@ -1,0 +1,51 @@
+<%@ index(Data) %>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Hello, my name is Moski Doski. I make the internet fun. » Drink Zzz</title>
+	<style type="text/css" media="screen">
+		@import url( http://127.0.0.1:8000/style.css);
+		@import url( http://127.0.0.1:8000/espresso_libre.css);
+		@import url( http://127.0.0.1:8000/twilight.css);
+	</style>
+		
+	
+</head>
+<body class="yui-skin-sam">
+	<div id="header-wrap">
+		<center>
+			<div id="header-container">
+				<a id="moski" href="http://kevinjohngomez.com/">Hello, my name is Moski Doski.</a>
+				<div id="nav-container">
+					<ul id="nav">
+						<li id="portfolio"><a href="/category/portfolio">Portfolio</a></li>
+						<li id="blog"><a href="/category/blog">Blog</a></li>
+						<li id="sale"><a href="/category/for-sale">For Sale</a></li>
+						<li id="hello"><a href="mailto:abushaikh@gmail.com">Hello</a></li>
+					</ul>
+				</div>
+			</div>
+		</center>
+	</div>
+	
+	<div id="content-wrap">
+		<center>
+			<% Data %>
+		</center>
+	</div>
+	
+	
+	<center>
+		<div id="footer-container">
+			<span class="copy">
+				Copyright © 2008 Moski Doski (abushaikh)
+			</span>
+			<span class="credit">
+				Made strong by <a href="http://erlyweb.org">ErlyWeb</a> | Let the <a href="http://erlang.org">Erlang</a> hacking begin!
+			</span>
+		</div>
+
+	</center>
+</body>
+</html>

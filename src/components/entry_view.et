@@ -1,0 +1,105 @@
+<%@ index(Entry) %>
+<% Entry %>
+
+<%@ entry({Id, Title, Body, Creatation_Time ,Category_Id, Category_Title , Comments_count }) %>
+<div class="post" id="post-<%  Id %>">
+	<div class="title-container">
+		<h3 class="storytitle">
+			<a href="/blog/entry/detail/<% Id %>" rel="bookmark"><% Title%></a>
+		</h3>
+		<span class="comments"><% Comments_count %></span>
+		<h6 class="date">
+			<% Creatation_Time %>							
+		</h6>
+		Category: <a href="/category/detail/<% Category_Id %>"><% Category_Title %></a>
+	</div>
+	<div class="storycontent">
+		<% Body %>
+	</div>
+</div>
+
+
+<%@ detail({Id,Title, Body, Creatation_Time ,Category_Id, Category_Title , Comments_count ,Comments}) %>
+<div class="post" id="post-<%  Id %>">
+	<div class="title-container">
+		<h3 class="storytitle">
+			<a href="/blog/entry/detail/<% Id %>" rel="bookmark"><% Title%></a>
+		</h3>
+		<span class="comments"><% Comments_count %></span>
+		<h6 class="date">
+			<% Creatation_Time %>							
+		</h6>
+		Category: <a href="/category/detail/<% Category_Id %>"><% Category_Title %></a>
+	</div>
+	<div class="storycontent">
+		<% Body %>
+	</div>
+</div>
+
+<ol id="commentlist">
+	<% show_comments(Comments) %>
+</ol>
+
+<div id="comment-form">
+	<form action="/blog/entry/new_comment" method="post" id="commentform">
+		<input name="name" id="author" value="" size="22" tabindex="1" type="text">
+
+		<input name="email" id="email" value="" size="22" tabindex="2" type="text">
+
+		<input name="website" id="url" value="" size="22" tabindex="3" type="text">
+
+		<textarea name="comment" id="comment" cols="100" rows="6" tabindex="4"></textarea>
+
+		<input name="entry_id" value="<% Id %>" type="hidden">
+
+		<input id="submit" tabindex="5" value="Leave a Comment" type="submit">
+	</form>
+</div>
+
+
+
+<%@ new(Items) %>
+<%? {Categories,Errors,Data} = Items %>
+<% helpers_html:show_errors(Errors) %>
+
+
+<form action="new" method="post">
+<table>
+	<tbody>
+		<tr>
+			<td valign="top">Title:</td>
+			<td>
+				<% erlyweb_html:input("title", text_field, undefined, helpers:value(entry:title(Data))) %>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top">Body:</td>
+			<td>
+				<textarea style="height:400px;width:550px;" name="body" id="msgpost1"><% helpers:value(entry:body(Data)) %></textarea>
+			</td>
+		</tr>
+
+		<tr>
+			<td valign="top">category:</td>
+			<td><% helpers_html:input("category_id", select, Categories , "one") %></td>
+				
+		</tr>
+		<tr><td><input value="Submit" type="submit"></td></tr>
+	</tbody>
+</table>
+</form>
+
+
+<%@ show_comments(Comments) %>
+<ul>
+<% [comments(C) || C <- Comments] %>
+</ul>
+
+<%@ comments(Comment) %>
+<li id="comment-251">
+	<h3>
+		<a href="http://scarecrowd.net/" onclick="javascript:pageTracker._trackPageview('/outbound/commentauthor/scarecrowd.net');" rel="external nofollow"><% comment:name(Comment) %></a> 
+		<small>says...</small>
+	</h3>
+	<p><% comment:comment(Comment) %></p>
+</li>

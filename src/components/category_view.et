@@ -1,0 +1,8 @@
+<%@ detail([{Title, Description}, Entries]) %>
+<h1><% Title %></h1>
+<p><% Description %></p>
+<% Entries %>
+
+<%@ entry({Id, Title, Body}) %>
+<h3><a href="/entry/detail/<% Id %>"><% Title %></a></h3>
+<p><% Body %></p>
