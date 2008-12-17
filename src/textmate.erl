@@ -7,7 +7,7 @@
 %% textmate:job({textmate, Str2})
 
 job(Info) ->
-	Cmd = lists:append(["ruby " , helpers:do_op() , "/src/textmate.rb"]),
+	Cmd = lists:append(["ruby " , helpers:do_op() , "/textmate.rb"]),
 	Port = open_port({spawn, Cmd}, [{packet, 4}, use_stdio, exit_status, binary]),
 
 	case Info of
