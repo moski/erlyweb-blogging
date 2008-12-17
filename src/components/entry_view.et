@@ -5,7 +5,7 @@
 <div class="post" id="post-<%  Id %>">
 	<div class="title-container">
 		<h3 class="storytitle">
-			<a href="/blog/entry/detail/<% Id %>" rel="bookmark"><% Title%></a>
+			<a href="/entry/detail/<% Id %>" rel="bookmark"><% Title%></a>
 		</h3>
 		<span class="comments"><% Comments_count %></span>
 		<h6 class="date">
@@ -23,7 +23,7 @@
 <div class="post" id="post-<%  Id %>">
 	<div class="title-container">
 		<h3 class="storytitle">
-			<a href="/blog/entry/detail/<% Id %>" rel="bookmark"><% Title%></a>
+			<a href="/entry/detail/<% Id %>" rel="bookmark"><% Title%></a>
 		</h3>
 		<span class="comments"><% Comments_count %></span>
 		<h6 class="date">
@@ -41,7 +41,7 @@
 </ol>
 
 <div id="comment-form">
-	<form action="/blog/entry/new_comment" method="post" id="commentform">
+	<form action="/entry/new_comment" method="post" id="commentform">
 		<input name="name" id="author" value="" size="22" tabindex="1" type="text">
 
 		<input name="email" id="email" value="" size="22" tabindex="2" type="text">
