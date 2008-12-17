@@ -10,7 +10,7 @@ boot(true) ->
 mysql_start(),
 compile().
 
-mysql_start() -> erlydb:start(mysql, [{hostname, DB_HOSTNAME }, {username, DB_USERNAME }, {password, "DB_PASSWORD"}, {database, DB_DATABASE}]).
-compile() -> erlyweb:compile(APP_PATH, [{erlydb_driver, mysql}]).
+mysql_start() -> erlydb:start(mysql, [{hostname, "localhost"}, {username, "erlang"}, {password, "erlang"}, {database, "blog"}]).
+compile() -> erlyweb:compile("/Users/Moski/erlang/apps/blog", [{erlydb_driver, mysql}]).
 
 
