@@ -1,14 +1,14 @@
--module(start).
--export([boot/0, boot/1]).
+-module(blog).
+-compile(export_all).
 -include("blog_app.hrl").
 
-boot() ->
-	boot(true).
+start() ->
+	start(true).
 
-boot(false) ->
+start(false) ->
 	compile();
 
-boot(true) ->
+start(true) ->
 	mysql_start(),
 	compile().
 
