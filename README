@@ -7,7 +7,6 @@ How to run
 - Edit yaws.conf to add the ErlyWeb application settings for Blog.
 - Start Yaws and in the shell, type "start:boot()".
 
-
 -- Ruby Gems for textmate formatting
 - sudo gem install hpricot
 - sudo gem install erlectricity
@@ -16,3 +15,15 @@ How to run
 
 Peace,
 Moski
+
+
+Sample Yaws configuration ....
+<server localhost>
+        port = 8000
+        listen = 127.0.0.1
+        docroot = /Users/Moski/erlang/apps/blog/www
+        appmods = <"/blog", erlyweb>
+        <opaque>
+                appname = blog
+        </opaque>
+</server>
