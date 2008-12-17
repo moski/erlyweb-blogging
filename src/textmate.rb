@@ -31,5 +31,3 @@ receive do |f|
     f.receive_loop
   end
 end
-
-

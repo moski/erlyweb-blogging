@@ -1,5 +1,7 @@
 -module(blog_app_controller).
 -export([hook/1]).
+-include("plugins.hrl").
+
 
 hook(A) ->
 	A1= normalize_appmoddata(A),

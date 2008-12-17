@@ -1,0 +1,2 @@
+-define(FLCIKER_PLUGIN, false).
+-define(RESUME, true).
