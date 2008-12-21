@@ -48,7 +48,7 @@
 
 		<input name="website" id="url" value="" size="22" tabindex="3" type="text">
 
-		<textarea name="comment" id="comment" cols="100" rows="6" tabindex="4"></textarea>
+		<textarea name="message" id="comment" cols="100" rows="6" tabindex="4"></textarea>
 
 		<input name="entry_id" value="<% Id %>" type="hidden">
 
